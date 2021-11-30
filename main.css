@@ -23,23 +23,6 @@
                 0 3vw 4vw -1vw  rgba(0, 0, 0, 0.8) ;  
 }
 
-/*.date {
-    position: absolute;
-    width: 120px;
-    height: 20px;
-    border-radius: 2px;
-    background: #ccc;
-    text-align: center;
-    line-height: 20px;
-    color: #000;
-    font-weight: 700;
-    bottom: 80px;
-    left: 50%;
-    transform: translate(-50%);
-}*/
-
-
-
 .hands > div {
     position: absolute;
     left: 50%;
