@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    background-color:silver;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.7),
+                0 3vw 4vw -1vw  rgba(0, 0, 0, 0.8) ;  
+}
+
+/*.date {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    border-radius: 2px;
+    background: #ccc;
+    text-align: center;
+    line-height: 20px;
+    color: #000;
+    font-weight: 700;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%);
+}*/
+
+
+
+.hands > div {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.hour-hand {
+    z-index: 5;
+    width: 16px;
+    height: 140px;
+    background: rgb(17, 17, 17);
+    top: 160px;
+    margin-left: -8px;
+    transform-origin: 50% 140px;
+}
+
+.minute-hand {
+    z-index: 6;
+    width: 12px;
+    height: 240px;
+    background: rgb(47, 47, 47);
+    top: 60px;
+    margin-left: -6px;
+    transform-origin: 50% 240px;
+}
+
+.second-hand {
+    z-index: 7;
+    width: 6px;
+    height: 320px;
+    background: rgb(147, 20, 20);
+    top: 30px;
+    margin-left: -2px;
+    transform-origin: 50% 270px;
+}
+
+.dot {
+    position: absolute;
+    z-index: 8;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(79, 78, 78);
+    left: 50%;
+    top: 50%;
+    box-shadow: 0 2px 4px -1px #000;
+    transform: translate(-50%, -50%);
+}
+
+.hours > span {
+    display: inline-block;
+    position: absolute;
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    z-index: 4;
+}
+
+.hour12 {
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hour1 {
+    left: 70%;
+    top: 83px;
+    transform: translateX(-50%);
+}
+.hour2 {
+    left: 83%;
+    top: 160px;
+    transform: translateX(-50%);
+}
+.hour3 {
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+.hour4 {
+    bottom: 150px;
+    left: 83%;
+    transform: translateX(-50%);
+}
+.hour5 {
+    bottom: 12%;
+    right: 25%;
+    transform: translateX(-50%);
+}
+.hour6 {
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hour7 {
+    bottom: 12%;
+    left: 31%;
+    transform: translateX(-50%);
+}
+.hour8 {
+    bottom: 150px;
+    left: 18%;
+    transform: translateX(-50%);
+}
+.hour9 {
+    top: 50%;
+    left: 65px;
+    transform: translateY(-50%);
+}
+.hour10 {
+    left: 20%;
+    top: 160px;
+    transform: translateX(-50%);
+}
+.hour11 {
+    left: 30%;
+    top: 81px;
+    transform: translateX(-50%);
+}
+
+.diallines {
+    position: absolute;
+    z-index: 2;
+    width: 3px;
+    height: 25px;
+    background: rgb(132, 131, 131);
+    left: 50%;
+    margin-left: -1px;
+    margin-top: 10px;
+    transform-origin: 50% 290px;
+}
+
+.diallines:nth-of-type(5n) {
+    width: 4px;
+    height: 35px;
+    background: rgb(84, 84, 84);
+
+}
