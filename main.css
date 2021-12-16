@@ -14,13 +14,37 @@
 }
 
 .clock {
-    position: absolute;
+    position: relative;
     background: rgba(255, 255, 255, 0.7);
     width: 600px;
     height: 600px;
     border-radius: 50%;
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.7),
                 0 3vw 4vw -1vw  rgba(0, 0, 0, 0.8) ;  
+}
+
+.num{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 40px;
+} 
+
+.num::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 30px;
+    margin-top: 8px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #777;    
 }
 
 .hands > div {
@@ -83,82 +107,82 @@
     z-index: 4;
 }
 
-.hour12 {
-    top: 45px;
-    left: 50%;
-    transform: translateX(-50%);
+.num1 {
+    transform: rotate(30deg);
 }
-.hour1 {
-    left: 70%;
-    top: 83px;
-    transform: translateX(-50%);
+.num1 div{
+    transform: rotate(-30deg);
 }
-.hour2 {
-    left: 83%;
-    top: 160px;
-    transform: translateX(-50%);
+.num2 {
+    transform: rotate(60deg);
 }
-.hour3 {
-    top: 50%;
-    right: 50px;
-    transform: translateY(-50%);
+.num2 div{
+    transform: rotate(-60deg);
 }
-.hour4 {
-    bottom: 150px;
-    left: 83%;
-    transform: translateX(-50%);
+.num3 {
+    transform: rotate(90deg);
 }
-.hour5 {
-    bottom: 12%;
-    right: 25%;
-    transform: translateX(-50%);
+.num3 div{
+    transform: rotate(-90deg);
 }
-.hour6 {
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
+.num4 {
+    transform: rotate(120deg);
 }
-.hour7 {
-    bottom: 12%;
-    left: 31%;
-    transform: translateX(-50%);
+.num4 div{
+    transform: rotate(-120deg);
 }
-.hour8 {
-    bottom: 150px;
-    left: 18%;
-    transform: translateX(-50%);
+.num5 {
+    transform: rotate(150deg);
 }
-.hour9 {
-    top: 50%;
-    left: 65px;
-    transform: translateY(-50%);
+.num5 div{
+    transform: rotate(-150deg);
 }
-.hour10 {
-    left: 20%;
-    top: 160px;
-    transform: translateX(-50%);
+.num6 {
+    transform: rotate(180deg);
 }
-.hour11 {
-    left: 30%;
-    top: 81px;
-    transform: translateX(-50%);
+.num6 div{
+    transform: rotate(-180deg);
 }
+.num7 {
+    transform: rotate(210deg);
+}
+.num7 div{
+    transform: rotate(-210deg);
+}
+.num8 {
+    transform: rotate(240deg);
+}
+.num8 div{
+    transform: rotate(-240deg);
+}
+.num9 {
+    transform: rotate(270deg);
+}
+.num9 div{
+    transform: rotate(-270deg);
+}
+.num10 {
+    transform: rotate(300deg);
+}
+.num10 div{
+    transform: rotate(-300deg);
+}
+.num11 {
+    transform: rotate(330deg);
+}
+.num11 div{
+    transform: rotate(-330deg);
+}
+
 
 .diallines {
     position: absolute;
     z-index: 2;
     width: 3px;
-    height: 25px;
-    background: rgb(132, 131, 131);
+    height: 20px;
+    background: #777;
     left: 50%;
     margin-left: -1px;
     margin-top: 10px;
     transform-origin: 50% 290px;
-}
-
-.diallines:nth-of-type(5n) {
-    width: 4px;
-    height: 35px;
-    background: rgb(84, 84, 84);
-
 }
